@@ -1,0 +1,11 @@
+C:\Users\Hindkaer\Desktop\IKT\4Semester\Calculator\Calculator\bin\Debug\Calculator.dll
+C:\Users\Hindkaer\Desktop\IKT\4Semester\Calculator\Calculator\bin\Debug\Calculator.pdb
+C:\Users\Hindkaer\Desktop\IKT\4Semester\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+C:\Users\Hindkaer\Desktop\IKT\4Semester\Calculator\Calculator\obj\Debug\Calculator.dll
+C:\Users\Hindkaer\Desktop\IKT\4Semester\Calculator\Calculator\obj\Debug\Calculator.pdb
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4SWT\Week 1 (calculator app)\Calculator\Calculator\bin\Debug\Calculator.dll
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4SWT\Week 1 (calculator app)\Calculator\Calculator\bin\Debug\Calculator.pdb
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4SWT\Week 1 (calculator app)\Calculator\Calculator\obj\Debug\Calculator.csprojAssemblyReference.cache
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4SWT\Week 1 (calculator app)\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4SWT\Week 1 (calculator app)\Calculator\Calculator\obj\Debug\Calculator.dll
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4SWT\Week 1 (calculator app)\Calculator\Calculator\obj\Debug\Calculator.pdb
