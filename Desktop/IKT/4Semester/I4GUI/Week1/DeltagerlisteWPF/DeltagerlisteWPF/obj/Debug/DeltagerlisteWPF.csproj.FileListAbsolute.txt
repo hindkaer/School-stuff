@@ -1,0 +1,15 @@
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\DeltagerlisteWPF\DeltagerlisteWPF\obj\Debug\DeltagerlisteWPF.csprojAssemblyReference.cache
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\DeltagerlisteWPF\DeltagerlisteWPF\obj\Debug\MainWindow.baml
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\DeltagerlisteWPF\DeltagerlisteWPF\obj\Debug\MainWindow.g.cs
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\DeltagerlisteWPF\DeltagerlisteWPF\obj\Debug\App.g.cs
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\DeltagerlisteWPF\DeltagerlisteWPF\obj\Debug\DeltagerlisteWPF_MarkupCompile.cache
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\DeltagerlisteWPF\DeltagerlisteWPF\obj\Debug\DeltagerlisteWPF.g.resources
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\DeltagerlisteWPF\DeltagerlisteWPF\obj\Debug\DeltagerlisteWPF.Properties.Resources.resources
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\DeltagerlisteWPF\DeltagerlisteWPF\obj\Debug\DeltagerlisteWPF.csproj.GenerateResource.cache
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\DeltagerlisteWPF\DeltagerlisteWPF\obj\Debug\DeltagerlisteWPF.csproj.CoreCompileInputs.cache
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\DeltagerlisteWPF\DeltagerlisteWPF\bin\Debug\DeltagerlisteWPF.exe.config
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\DeltagerlisteWPF\DeltagerlisteWPF\bin\Debug\DeltagerlisteWPF.exe
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\DeltagerlisteWPF\DeltagerlisteWPF\bin\Debug\DeltagerlisteWPF.pdb
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\DeltagerlisteWPF\DeltagerlisteWPF\obj\Debug\DeltagerlisteWPF_MarkupCompile.lref
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\DeltagerlisteWPF\DeltagerlisteWPF\obj\Debug\DeltagerlisteWPF.exe
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\DeltagerlisteWPF\DeltagerlisteWPF\obj\Debug\DeltagerlisteWPF.pdb

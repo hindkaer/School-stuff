@@ -1,0 +1,15 @@
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\MyFirstWPFApp\MyFirstWPFApp\bin\Debug\MyFirstWPFApp.exe.config
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\MyFirstWPFApp\MyFirstWPFApp\bin\Debug\MyFirstWPFApp.exe
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\MyFirstWPFApp\MyFirstWPFApp\bin\Debug\MyFirstWPFApp.pdb
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\MyFirstWPFApp\MyFirstWPFApp\obj\Debug\MyFirstWPFApp.csprojAssemblyReference.cache
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\MyFirstWPFApp\MyFirstWPFApp\obj\Debug\MainWindow.g.cs
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\MyFirstWPFApp\MyFirstWPFApp\obj\Debug\App.g.cs
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\MyFirstWPFApp\MyFirstWPFApp\obj\Debug\MyFirstWPFApp_MarkupCompile.cache
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\MyFirstWPFApp\MyFirstWPFApp\obj\Debug\MyFirstWPFApp_MarkupCompile.lref
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\MyFirstWPFApp\MyFirstWPFApp\obj\Debug\MainWindow.baml
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\MyFirstWPFApp\MyFirstWPFApp\obj\Debug\MyFirstWPFApp.g.resources
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\MyFirstWPFApp\MyFirstWPFApp\obj\Debug\MyFirstWPFApp.Properties.Resources.resources
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\MyFirstWPFApp\MyFirstWPFApp\obj\Debug\MyFirstWPFApp.csproj.GenerateResource.cache
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\MyFirstWPFApp\MyFirstWPFApp\obj\Debug\MyFirstWPFApp.csproj.CoreCompileInputs.cache
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\MyFirstWPFApp\MyFirstWPFApp\obj\Debug\MyFirstWPFApp.exe
+C:\Users\Hindkaer\Desktop\IKT\4Semester\I4GUI\Week1\MyFirstWPFApp\MyFirstWPFApp\obj\Debug\MyFirstWPFApp.pdb

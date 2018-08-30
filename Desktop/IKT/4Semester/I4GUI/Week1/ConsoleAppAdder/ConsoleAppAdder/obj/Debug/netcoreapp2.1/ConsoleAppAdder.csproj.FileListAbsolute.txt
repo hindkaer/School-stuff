@@ -1,0 +1,11 @@
+C:\Users\Hindkaer\source\repos\ConsoleAppAdder\ConsoleAppAdder\bin\Debug\netcoreapp2.1\ConsoleAppAdder.deps.json
+C:\Users\Hindkaer\source\repos\ConsoleAppAdder\ConsoleAppAdder\bin\Debug\netcoreapp2.1\ConsoleAppAdder.runtimeconfig.json
+C:\Users\Hindkaer\source\repos\ConsoleAppAdder\ConsoleAppAdder\bin\Debug\netcoreapp2.1\ConsoleAppAdder.runtimeconfig.dev.json
+C:\Users\Hindkaer\source\repos\ConsoleAppAdder\ConsoleAppAdder\bin\Debug\netcoreapp2.1\ConsoleAppAdder.dll
+C:\Users\Hindkaer\source\repos\ConsoleAppAdder\ConsoleAppAdder\bin\Debug\netcoreapp2.1\ConsoleAppAdder.pdb
+C:\Users\Hindkaer\source\repos\ConsoleAppAdder\ConsoleAppAdder\obj\Debug\netcoreapp2.1\ConsoleAppAdder.csprojAssemblyReference.cache
+C:\Users\Hindkaer\source\repos\ConsoleAppAdder\ConsoleAppAdder\obj\Debug\netcoreapp2.1\ConsoleAppAdder.csproj.CoreCompileInputs.cache
+C:\Users\Hindkaer\source\repos\ConsoleAppAdder\ConsoleAppAdder\obj\Debug\netcoreapp2.1\ConsoleAppAdder.AssemblyInfoInputs.cache
+C:\Users\Hindkaer\source\repos\ConsoleAppAdder\ConsoleAppAdder\obj\Debug\netcoreapp2.1\ConsoleAppAdder.AssemblyInfo.cs
+C:\Users\Hindkaer\source\repos\ConsoleAppAdder\ConsoleAppAdder\obj\Debug\netcoreapp2.1\ConsoleAppAdder.dll
+C:\Users\Hindkaer\source\repos\ConsoleAppAdder\ConsoleAppAdder\obj\Debug\netcoreapp2.1\ConsoleAppAdder.pdb
