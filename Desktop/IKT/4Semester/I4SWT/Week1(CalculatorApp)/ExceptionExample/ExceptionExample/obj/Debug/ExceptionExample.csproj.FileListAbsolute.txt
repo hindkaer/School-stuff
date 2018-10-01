@@ -1,9 +1,0 @@
-C:\Users\frabj\Documents\Kurser\I4SWT\I4SWT\SLIDES\02.2 - Exceptions\ExceptionExample\ExceptionExample\bin\Debug\ExceptionExample.exe.config
-C:\Users\frabj\Documents\Kurser\I4SWT\I4SWT\SLIDES\02.2 - Exceptions\ExceptionExample\ExceptionExample\bin\Debug\ExceptionExample.exe
-C:\Users\frabj\Documents\Kurser\I4SWT\I4SWT\SLIDES\02.2 - Exceptions\ExceptionExample\ExceptionExample\bin\Debug\ExceptionExample.pdb
-C:\Users\frabj\Documents\Kurser\I4SWT\I4SWT\SLIDES\02.2 - Exceptions\ExceptionExample\ExceptionExample\obj\Debug\ExceptionExample.csprojResolveAssemblyReference.cache
-C:\Users\frabj\Documents\Kurser\I4SWT\I4SWT\SLIDES\02.2 - Exceptions\ExceptionExample\ExceptionExample\obj\Debug\ExceptionExample.exe
-C:\Users\frabj\Documents\Kurser\I4SWT\I4SWT\SLIDES\02.2 - Exceptions\ExceptionExample\ExceptionExample\obj\Debug\ExceptionExample.pdb
-C:\Users\frabj\Documents\Kurser\I4SWT\I4SWT\F15SLIDES\02.2 - Exceptions\ExceptionExample\ExceptionExample\bin\Debug\ExceptionExample.exe.config
-C:\Users\frabj\Documents\Kurser\I4SWT\I4SWT\F15SLIDES\02.2 - Exceptions\ExceptionExample\ExceptionExample\obj\Debug\ExceptionExample.exe
-C:\Users\frabj\Documents\Kurser\I4SWT\I4SWT\F15SLIDES\02.2 - Exceptions\ExceptionExample\ExceptionExample\obj\Debug\ExceptionExample.pdb
