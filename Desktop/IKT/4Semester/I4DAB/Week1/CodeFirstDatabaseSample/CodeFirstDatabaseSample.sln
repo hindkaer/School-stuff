@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeFirstDatabaseSample", "CodeFirstDatabaseSample\CodeFirstDatabaseSample.csproj", "{8D16D82B-0DC9-48FA-BB1D-B3885BDE4501}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Personkartotek", "Personkartotek\Personkartotek.sqlproj", "{ABDDB80B-9121-43AD-AF17-15C0BB981446}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,12 @@ Global
 		{8D16D82B-0DC9-48FA-BB1D-B3885BDE4501}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D16D82B-0DC9-48FA-BB1D-B3885BDE4501}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D16D82B-0DC9-48FA-BB1D-B3885BDE4501}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABDDB80B-9121-43AD-AF17-15C0BB981446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABDDB80B-9121-43AD-AF17-15C0BB981446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABDDB80B-9121-43AD-AF17-15C0BB981446}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{ABDDB80B-9121-43AD-AF17-15C0BB981446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABDDB80B-9121-43AD-AF17-15C0BB981446}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABDDB80B-9121-43AD-AF17-15C0BB981446}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
