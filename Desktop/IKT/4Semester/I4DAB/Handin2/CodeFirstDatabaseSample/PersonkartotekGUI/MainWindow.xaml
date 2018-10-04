@@ -5,8 +5,49 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PersonkartotekGUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Personkartotek" Height="450" Width="800">
     <Grid>
-        
+        <Grid HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="792">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Person" HorizontalAlignment="Left" Margin="11,83,0,0" VerticalAlignment="Top" Width="112" Height="26"/>
+            <Label Content="Fornavn:" HorizontalAlignment="Left" Margin="11,114,0,0" VerticalAlignment="Top" Width="135" Height="26"/>
+            <Label Content="Mellemnavn:" HorizontalAlignment="Left" Margin="11,145,0,0" VerticalAlignment="Top" Width="135" Height="26"/>
+            <Label Content="Efternavn:" HorizontalAlignment="Left" Margin="11,176,0,0" VerticalAlignment="Top" Width="135" Height="26"/>
+            <Label Content="Persontype:" HorizontalAlignment="Left" Margin="11,207,0,0" VerticalAlignment="Top" Width="135" Height="26"/>
+            <Label Content="Telefon" HorizontalAlignment="Left" Margin="11,279,0,0" VerticalAlignment="Top" Width="135" Height="26"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="150,118,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="150,149,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="151,179,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="151,211,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Telefonnummer:" HorizontalAlignment="Left" Margin="11,310,0,0" VerticalAlignment="Top" Width="135" Height="26"/>
+            <Label Content="Telefonselskab:" HorizontalAlignment="Left" Margin="11,341,0,0" VerticalAlignment="Top" Width="135" Height="26"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="151,314,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="151,345,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Adresse" HorizontalAlignment="Left" Margin="28,29,0,0" VerticalAlignment="Top" Width="112" Height="26" Grid.Column="1"/>
+            <Label Content="Bynavn:" HorizontalAlignment="Left" Margin="28,60,0,0" VerticalAlignment="Top" Width="112" Height="26" Grid.Column="1"/>
+            <Label Content="Postnummer:" HorizontalAlignment="Left" Margin="28,91,0,0" VerticalAlignment="Top" Width="112" Height="26" Grid.Column="1"/>
+            <Label Content="Adresse:" HorizontalAlignment="Left" Margin="28,122,0,0" VerticalAlignment="Top" Width="112" Height="26" Grid.Column="1"/>
+            <Label Content="Husnummer:" HorizontalAlignment="Left" Margin="28,153,0,0" VerticalAlignment="Top" Width="112" Height="26" Grid.Column="1"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="145,60,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="145,95,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="145,125,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="145,157,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+            <Label Content="Emailadresse" HorizontalAlignment="Left" Margin="28,225,0,0" VerticalAlignment="Top" Width="112" Height="26" Grid.Column="1"/>
+            <Label Content="Emailadresse:" HorizontalAlignment="Left" Margin="28,256,0,0" VerticalAlignment="Top" Width="112" Height="26" Grid.Column="1"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="140,260,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="228" Grid.Column="1"/>
+            <Label Content="Noter:" HorizontalAlignment="Left" Margin="28,328,0,0" VerticalAlignment="Top" Width="112" Height="26" Grid.Column="1"/>
+            <TextBox HorizontalAlignment="Left" Height="43" Margin="140,328,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="228" Grid.Column="1"/>
+            <Button Content="Tilføj note" Grid.Column="1" HorizontalAlignment="Left" Margin="140,389,0,0" VerticalAlignment="Top" Width="150"/>
+            <Button Content="Tilføj person" HorizontalAlignment="Left" Margin="136,254,0,0" VerticalAlignment="Top" Width="152"/>
+            <Button Content="Tilføj telefon" HorizontalAlignment="Left" Margin="135,389,0,0" VerticalAlignment="Top" Width="152"/>
+            <Button Content="Tilføj adresse" HorizontalAlignment="Left" Margin="140,200,0,0" VerticalAlignment="Top" Width="152" Grid.Column="1"/>
+            <Button Content="Tilføj E-mail" Grid.Column="1" HorizontalAlignment="Left" Margin="140,294,0,0" VerticalAlignment="Top" Width="150"/>
+            <Button Content="Find eksisterende person" HorizontalAlignment="Left" Margin="111,35,0,0" VerticalAlignment="Top" Width="195"/>
+
+        </Grid>
+
     </Grid>
 </Window>
