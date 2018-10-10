@@ -5,7 +5,15 @@ VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Personkartotek", "Personkartotek\Personkartotek.sqlproj", "{0B6B4029-DF7A-4260-8929-3990A96D3501}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonkartotekApp", "PersonkartotekApp\PersonkartotekApp.csproj", "{B1BCB57C-4104-4C6F-8E11-2EE827C1CB83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastruktur", "Infrastruktur\Infrastruktur.csproj", "{4F0551D4-1F53-47AE-A0B5-C178C629D6E4}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonkartotekGUI", "PersonkartotekGUI\PersonkartotekGUI.csproj", "{885143A6-99D9-41C6-B126-C6FE655228CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Applogik", "Applogik\Applogik.csproj", "{0FA03460-9258-4323-882C-64CC4E03C186}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Applikation", "Applikation\Applikation.csproj", "{A646F30C-2BFD-44CA-9975-3BF7EB7FA51D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +27,26 @@ Global
 		{0B6B4029-DF7A-4260-8929-3990A96D3501}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B6B4029-DF7A-4260-8929-3990A96D3501}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0B6B4029-DF7A-4260-8929-3990A96D3501}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B1BCB57C-4104-4C6F-8E11-2EE827C1CB83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1BCB57C-4104-4C6F-8E11-2EE827C1CB83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1BCB57C-4104-4C6F-8E11-2EE827C1CB83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1BCB57C-4104-4C6F-8E11-2EE827C1CB83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F0551D4-1F53-47AE-A0B5-C178C629D6E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F0551D4-1F53-47AE-A0B5-C178C629D6E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F0551D4-1F53-47AE-A0B5-C178C629D6E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F0551D4-1F53-47AE-A0B5-C178C629D6E4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{885143A6-99D9-41C6-B126-C6FE655228CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{885143A6-99D9-41C6-B126-C6FE655228CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{885143A6-99D9-41C6-B126-C6FE655228CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{885143A6-99D9-41C6-B126-C6FE655228CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FA03460-9258-4323-882C-64CC4E03C186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FA03460-9258-4323-882C-64CC4E03C186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FA03460-9258-4323-882C-64CC4E03C186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FA03460-9258-4323-882C-64CC4E03C186}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A646F30C-2BFD-44CA-9975-3BF7EB7FA51D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A646F30C-2BFD-44CA-9975-3BF7EB7FA51D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A646F30C-2BFD-44CA-9975-3BF7EB7FA51D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A646F30C-2BFD-44CA-9975-3BF7EB7FA51D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -15,7 +15,7 @@
     <RootNamespace>Personkartotek</RootNamespace>
     <AssemblyName>Personkartotek</AssemblyName>
     <ModelCollation>1030,CI</ModelCollation>
-    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DefaultFileStructure>BySchema</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetLanguage>CS</TargetLanguage>
@@ -61,15 +61,27 @@
     <Folder Include="Properties" />
     <Folder Include="dbo\" />
     <Folder Include="dbo\Tables\" />
+    <Folder Include="Scripts" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Personkartotek.sql" />
+    <Build Include="dbo\Emailadresse.sql" />
+    <Build Include="dbo\Telefon.sql" />
+    <Build Include="dbo\Operatør.sql" />
+    <Build Include="dbo\Person.sql" />
+    <Build Include="dbo\Noter.sql" />
+    <Build Include="dbo\Adresse.sql" />
+    <Build Include="dbo\AlternativAdresse.sql" />
+    <Build Include="Scripts\SQLQuery1.sql" />
+    <Build Include="Scripts\SQLQuery2.sql" />
+    <Build Include="Scripts\SQLQuery3.sql" />
+    <Build Include="Scripts\SQLQuery4.sql" />
+    <Build Include="Scripts\SQLQuery5.sql" />
+    <Build Include="dbo\Tables\City.sql" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="dbo\Tables\Adresse.sql" />
-    <Build Include="dbo\Tables\Person.sql" />
-    <Build Include="dbo\Tables\Telefon.sql" />
-    <Build Include="dbo\Tables\Emailadresse.sql" />
-    <Build Include="dbo\Tables\Noter.sql" />
+    <RefactorLog Include="Personkartotek.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Script1.sql" />
   </ItemGroup>
 </Project>
