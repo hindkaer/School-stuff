@@ -15,15 +15,14 @@ namespace PersonkartotekApp
         public virtual string Citynavn { get; set; }
         public virtual string Land { get; set; }
 
-        public virtual long Adresse { get; set; }
 
 
-        //public City(string _Postnummer, string _Citynavn, string _Land)
-        //{
-        //    Postnummer = _Postnummer;
-        //    Citynavn = _Citynavn;
-        //    Land = _Land;
-        //}
+        public City(string _Postnummer, string _Citynavn, string _Land)
+        {
+            Postnummer = _Postnummer;
+            Citynavn = _Citynavn;
+            Land = _Land;
+        }
 
     }
 }

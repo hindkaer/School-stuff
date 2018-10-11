@@ -8,16 +8,16 @@ namespace PersonkartotekApp
 {
     public class Telefon
     {
-        //public Telefon(int _Telefonnummer, Operatoer _Operatoer)
-        //{
-        //    Telefonnummer = _Telefonnummer;
-        //    OperatoerID = _Operatoer.OperatoerID;
-        //}
+        public Telefon(int _Telefonnummer, Operatoer _Operatoer)
+        {
+            Telefonnummer = _Telefonnummer;
+            Operatør = _Operatoer.OperatoerID;
+        }
 
         public virtual int Telefonnummer { get; set; }
         public virtual long Person { get; set; }
         public virtual long TelefonID { get; set; }
 
-        public virtual ICollection<Operatoer> operatører { get; set; }
+        public virtual long Operatør { get; set; }
     }
 }

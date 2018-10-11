@@ -17,7 +17,7 @@ namespace PersonkartotekApp
         public virtual long OperatoerID { get; set; }
         public virtual string Selskab { get; set; }
 
-        public virtual long Telefon { get; set; }
+        public List<Telefon> Telefons { get; set; }
 
     }
 }

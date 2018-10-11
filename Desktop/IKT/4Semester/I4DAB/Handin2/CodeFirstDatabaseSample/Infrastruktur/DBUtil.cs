@@ -28,9 +28,9 @@ namespace Infrastuktur
        
         public void AddPersonDB(ref Person p)  // Tilføj en person
         {
-            string insertStringParam = @"INSERT INTO [Person] (Fornavn, Mellemnavn, Efternavn, Type)
+            string insertStringParam = @"INSERT INTO [Person] (Fornavn, Mellemnavn, Efternavn, Type, Adresse)
                                                     OUTPUT INSERTED.PersonID  
-                                                    VALUES (@Fornavn, @Mellemnavn, @Efternavn,@Type)";
+                                                    VALUES (@Fornavn, @Mellemnavn, @Efternavn,@Type, @Adresse)";
 
             using (SqlCommand cmd = new SqlCommand(insertStringParam, openConnection))
             {
@@ -39,7 +39,8 @@ namespace Infrastuktur
                 cmd.Parameters.AddWithValue("@Mellemnavn", p.Mellemnavn);
                 cmd.Parameters.AddWithValue("@Efternavn", p.Efternavn);
                 cmd.Parameters.AddWithValue("@Type", p.Type);
-                
+                cmd.Parameters.AddWithValue("@Adresse", p.Adresse);
+
                 p.PersonID = (long)cmd.ExecuteScalar();
             }
         }
@@ -47,7 +48,7 @@ namespace Infrastuktur
         public void UpdatePersonDB(ref Person p)  // Opdater en eksisterende person
         {
             string updateStringParam = @"UPDATE Person 
-                                             SET Fornavn=@Fornavn, Mellemnavn=@Mellemnavn, Efternavn=@Efternavn, Type=@Type
+                                             SET Fornavn=@Fornavn, Mellemnavn=@Mellemnavn, Efternavn=@Efternavn, Type=@Type, Adresse=@Adresse
                                              WHERE PersonID=@PersonID";
                                               
 
@@ -58,6 +59,7 @@ namespace Infrastuktur
                 cmd.Parameters.AddWithValue("@Mellemnavn", p.Mellemnavn);
                 cmd.Parameters.AddWithValue("@Efternavn", p.Efternavn);
                 cmd.Parameters.AddWithValue("@Type", p.Type);
+                cmd.Parameters.AddWithValue("@Adresse", p.Adresse);
                 cmd.Parameters.AddWithValue("@PersonID", p.PersonID);
 
                 var id = (long)cmd.ExecuteNonQuery();
@@ -76,29 +78,21 @@ namespace Infrastuktur
             }
         }
 
-        public List<Person> GetPerson() // Printer en liste af alle de eksisterende personer
+        public void GetPersonByID(ref Person p)
         {
-            string sqlcmd = @"SELECT * FROM Person";
+            string sqlcmd = @"SELECT [Fornavn], [Mellemnavn], [Efternavn], [Type] FROM Person WHERE ([PersonID] = @PersonID)";
             using (var cmd = new SqlCommand(sqlcmd, openConnection))
             {
+                cmd.Parameters.AddWithValue("@PersonID", p.PersonID);
+
                 SqlDataReader rdr = null;
                 rdr = cmd.ExecuteReader();
-                List<Person> hver = new List<Person>();
-                Person p = null;
-                while (rdr.Read())
+
+                if (rdr.Read())
                 {
-                    p = new Person();
                     p.PersonID = (long)rdr["PersonID"];
-                    p.Fornavn = (string)rdr["Fornavn"];
-                    p.Mellemnavn = (string)rdr["Mellemnavn"];
-                    p.Efternavn = (string)rdr["Efternavn"];
-                    p.Type = (string)rdr["Type"];
-
-                    hver.Add(p);
                 }
-                return hver;
             }
-
         }
 
 
@@ -243,13 +237,13 @@ namespace Infrastuktur
         public void AddOperatoerDB(ref Operatoer o)  // Tilføjer en Operatør
         {
             string insertStringParam =
-                @"INSERT INTO [Operatør] (Selskab, Telefon) 
-                OUTPUT INSERTED.OperatørID VALUES (@Selskab, @Telefon)";
+                @"INSERT INTO [Operatør] (Selskab) 
+                OUTPUT INSERTED.OperatørID VALUES (@Selskab)";
 
             using (SqlCommand cmd = new SqlCommand(insertStringParam, openConnection))
             {
                 cmd.Parameters.AddWithValue("@Selskab", o.Selskab);
-                cmd.Parameters.AddWithValue("@Telefon", o.Telefon);
+                
 
                 o.OperatoerID = (long)cmd.ExecuteScalar();
             }
@@ -258,7 +252,7 @@ namespace Infrastuktur
         public void UpdateOperatoerDB(ref Operatoer o)  // Opdaterer en eksisterende Operatør
         {
             string updateStringParam = @"UPDATE Operatør 
-                                             SET Selskab=@Selskab, Telefon=@Telefon
+                                             SET Selskab=@Selskab
                                              WHERE OperatørID=@OperatørID";
 
 
@@ -266,7 +260,6 @@ namespace Infrastuktur
             {
                 // Get your parameters ready                    
                 cmd.Parameters.AddWithValue("@Selskab", o.Selskab);
-                cmd.Parameters.AddWithValue("@Telefon", o.Telefon);
                 cmd.Parameters.AddWithValue("@OperatørID", o.OperatoerID);
 
                 var id = (long)cmd.ExecuteNonQuery();
@@ -298,7 +291,6 @@ namespace Infrastuktur
                 {
                     o = new Operatoer();
                     o.OperatoerID = (long)rdr["OperatørID"];
-                    o.OperatoerID = (long)rdr["Telefon"];
                     o.Selskab = (string)rdr["Selskab"];
 
                     operatoerlist.Add(o);
@@ -310,15 +302,14 @@ namespace Infrastuktur
         public void AddCityDB(ref City c)  // Tilføjer en By
         {
             string insertStringParam =
-                @"INSERT INTO [City] (Citynavn, Postnummer, Land, Adresse) 
-                OUTPUT INSERTED.CityID VALUES (@Citynavn, @Postnummer, @Land, @Adresse)";
+                @"INSERT INTO [City] (Citynavn, Postnummer, Land) 
+                OUTPUT INSERTED.CityID VALUES (@Citynavn, @Postnummer, @Land)";
 
             using (SqlCommand cmd = new SqlCommand(insertStringParam, openConnection))
             {
                 cmd.Parameters.AddWithValue("@Citynavn", c.Citynavn);
                 cmd.Parameters.AddWithValue("@Postnummer", c.Postnummer);
                 cmd.Parameters.AddWithValue("@Land", c.Land);
-                cmd.Parameters.AddWithValue("@Adresse", c.Adresse);
 
                 c.CityID = (long)cmd.ExecuteScalar();
             }
@@ -327,7 +318,7 @@ namespace Infrastuktur
         public void UpdateCityDB(ref City c)  // Opdaterer en eksisterende By
         {
             string updateStringParam = @"UPDATE City 
-                                             SET Citynavn=@Citynavn, Postnummer=@Postnummer, Land=@Land, Adresse=@Adresse
+                                             SET Citynavn=@Citynavn, Postnummer=@Postnummer, Land=@Land
                                              WHERE CityID=@CityID";
 
 
@@ -337,7 +328,6 @@ namespace Infrastuktur
                 cmd.Parameters.AddWithValue("@Citynavn", c.Citynavn);
                 cmd.Parameters.AddWithValue("@Postnummer", c.Postnummer);
                 cmd.Parameters.AddWithValue("@Land", c.Land);
-                cmd.Parameters.AddWithValue("@Adresse", c.Adresse);
                 cmd.Parameters.AddWithValue("@CityID", c.CityID);
 
                 var id = (long)cmd.ExecuteNonQuery();
@@ -357,40 +347,34 @@ namespace Infrastuktur
         }
 
 
-        public List<City> GetCity() // Printer en liste af alle de eksisterende byer
+        public void GetCityByID(ref City c)
         {
-            string sqlcmd = @"SELECT * FROM City";
+            string sqlcmd = @"SELECT [Citynavn], [Postnummer], [Land] FROM Byy WHERE ([CityID] = @CityID)";
             using (var cmd = new SqlCommand(sqlcmd, openConnection))
             {
+                cmd.Parameters.AddWithValue("@CityID", c.CityID);
+
                 SqlDataReader rdr = null;
                 rdr = cmd.ExecuteReader();
-                List<City> citylist = new List<City>();
-                City c = null;
-                while (rdr.Read())
-                {
-                    c = new City();
-                    c.CityID = (long)rdr["OperatørID"];
-                    c.Citynavn = (string)rdr["Citynavn"];
-                    c.Postnummer = (string)rdr["Postnummer"];
-                    c.Land = (string)rdr["Land"];
-                    c.CityID = (long)rdr["Adresse"];
 
-                    citylist.Add(c);
+                if (rdr.Read())
+                {
+                    c.CityID = (long)rdr["CityID"];
                 }
-                return citylist;
             }
         }
 
         public void AddTelefonDB(ref Telefon t)  // Tilføjer en Telefon
         {
             string insertStringParam =
-                @"INSERT INTO [Telefon] (Telefonnnummer, Person) 
-                OUTPUT INSERTED.TelefonID VALUES (@Telefonnummer, @Person)";
+                @"INSERT INTO [Telefon] (Telefonnnummer, Person, Operatør) 
+                OUTPUT INSERTED.TelefonID VALUES (@Telefonnummer, @Person, @Operatør)";
 
             using (SqlCommand cmd = new SqlCommand(insertStringParam, openConnection))
             {
                 cmd.Parameters.AddWithValue("@Telefonnummer", t.Telefonnummer);
                 cmd.Parameters.AddWithValue("@Person", t.Person);
+                cmd.Parameters.AddWithValue("@Operatør", t.Operatør);
 
                 t.TelefonID = (long)cmd.ExecuteScalar();
             }
@@ -399,7 +383,7 @@ namespace Infrastuktur
         public void UpdateTelefonDB(ref Telefon t)  // Opdaterer en eksisterende Telefon
         {
             string updateStringParam = @"UPDATE Telefon 
-                                             SET Telefonnummer=@Telefonnummer, Person=@Person
+                                             SET Telefonnummer=@Telefonnummer, Person=@Person, Operatør=@Operatør
                                              WHERE TelefonID=@TelefonID";
 
 
@@ -408,6 +392,7 @@ namespace Infrastuktur
                 // Get your parameters ready                    
                 cmd.Parameters.AddWithValue("@Telefonnummer", t.Telefonnummer);
                 cmd.Parameters.AddWithValue("@Person", t.Person);
+                cmd.Parameters.AddWithValue("@Operatør", t.Operatør);
                 cmd.Parameters.AddWithValue("@TelefonID", t.TelefonID);
 
                 var id = (long)cmd.ExecuteNonQuery();
@@ -426,39 +411,34 @@ namespace Infrastuktur
             }
         }
 
-        public List<Telefon> GetTelefon() // Printer en liste af alle de eksisterende Telefoner
+        public void GetTelefonByID(ref Telefon t)
         {
-            string sqlcmd = @"SELECT * FROM Telefon";
+            string sqlcmd = @"SELECT [Telefonnummer], [Operatør] FROM Person WHERE ([TelefonID] = @TelefonID)";
             using (var cmd = new SqlCommand(sqlcmd, openConnection))
             {
+                cmd.Parameters.AddWithValue("@TelefonID", t.TelefonID);
+
                 SqlDataReader rdr = null;
                 rdr = cmd.ExecuteReader();
-                List<Telefon> telefonlist = new List<Telefon>();
-                Telefon t = null;
-                while (rdr.Read())
-                {
-                    t = new Telefon();
-                    t.TelefonID = (long)rdr["TelefonID"];
-                    t.TelefonID = (long)rdr["Person"];
-                    t.Telefonnummer = (int)rdr["Telefonnummer"];
 
-                    telefonlist.Add(t);
+                if (rdr.Read())
+                {
+                    t.TelefonID = (long)rdr["TelefonID"];
                 }
-                return telefonlist;
             }
         }
 
         public void AddAdresseDB(ref Adresse a)  // Tilføjer en Adresse
         {
             string insertStringParam =
-                @"INSERT INTO [Adresse] (Vej, Husnummer, Person) 
-                OUTPUT INSERTED.AdresseID VALUES (@Vej, @Husnummer, @Person)";
+                @"INSERT INTO [Adresse] (Vej, Husnummer, City) 
+                OUTPUT INSERTED.AdresseID VALUES (@Vej, @Husnummer, @City)";
 
             using (SqlCommand cmd = new SqlCommand(insertStringParam, openConnection))
             {
                 cmd.Parameters.AddWithValue("@Vej", a.Vej);
                 cmd.Parameters.AddWithValue("@Husnummer", a.Husnummer);
-                cmd.Parameters.AddWithValue("@Person", a.Person);
+                cmd.Parameters.AddWithValue("@City", a.City);
 
 
                 a.AdresseID = (long)cmd.ExecuteScalar();
@@ -468,7 +448,7 @@ namespace Infrastuktur
         public void UpdateAdresseDB(ref Adresse a)  // Opdaterer en eksisterende Adresse
         {
             string updateStringParam = @"UPDATE Adresse 
-                                             SET Vej=@Vej, Husnummer=@Husnummer, Person=@Person
+                                             SET Vej=@Vej, Husnummer=@Husnummer, City=@City
                                              WHERE AdresseID=@AdresseID";
 
 
@@ -477,7 +457,7 @@ namespace Infrastuktur
                 // Get your parameters ready                    
                 cmd.Parameters.AddWithValue("@Vej", a.Vej);
                 cmd.Parameters.AddWithValue("@Husnummer", a.Husnummer);
-                cmd.Parameters.AddWithValue("@Person", a.Person);
+                cmd.Parameters.AddWithValue("@City", a.City);
                 cmd.Parameters.AddWithValue("@AdresseID", a.AdresseID);
 
                 var id = (long)cmd.ExecuteNonQuery();
@@ -496,26 +476,20 @@ namespace Infrastuktur
             }
         }
 
-        public List<Adresse> GetAdresse() // Printer en liste af alle de eksisterende Adresser
+        public void GetAdresseByID(ref Adresse a)
         {
-            string sqlcmd = @"SELECT * FROM Adresse";
+            string sqlcmd = @"SELECT [Vej], [Husnummer] FROM Adresse WHERE ([AdresseID] = @AdresseID)";
             using (var cmd = new SqlCommand(sqlcmd, openConnection))
             {
+                cmd.Parameters.AddWithValue("@AdresseID", a.AdresseID);
+
                 SqlDataReader rdr = null;
                 rdr = cmd.ExecuteReader();
-                List<Adresse> adresselist = new List<Adresse>();
-                Adresse a = null;
-                while (rdr.Read())
-                {
-                    a = new Adresse();
-                    a.AdresseID = (long)rdr["AdresseID"];
-                    a.AdresseID = (long)rdr["Person"];
-                    a.Vej = (string)rdr["Vej"];
-                    a.Husnummer = (string)rdr["Husnummer"];
 
-                    adresselist.Add(a);
+                if (rdr.Read())
+                {
+                    a.AdresseID = (long)rdr["AdresseID"];
                 }
-                return adresselist;
             }
         }
     }

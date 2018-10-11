@@ -14,25 +14,28 @@ namespace Applogik
         public void TheApp()
         {
             DBUtil utilitiy = new DBUtil();
-            Person person1 = new Person() { Fornavn = "Simon", Mellemnavn = "Møller", Efternavn = "Hindkaer", Type = "Mand"};
 
-            Adresse adresse1 = new Adresse() {Vej = "Gyldenløvesgade", Husnummer = "6, 2 sal th"};
+            City city1 = new City("8200", "Aarhus N", "Danmark");
+            utilitiy.AddCityDB(ref city1);           // Tilføjer city1 til databasen
 
-            City city1 = new City(){Citynavn="Aarhus N", Postnummer = "8200"};
+            Adresse adresse1 = new Adresse("Gyldenløvesgade", "6, 2 sal th", city1);
+            utilitiy.AddAdresseDB(ref adresse1);     // Tilføjer adresse1 til databasen
 
             Emailadresse email1 = new Emailadresse() {Email = "hindkaer_msn@hotmail.com", EmailID = 7};
 
-            Telefon telefon1 = new Telefon() {Telefonnummer = 20668161};
+            Operatoer operatør1 = new Operatoer() { Selskab = "TDC" };
+
+            Telefon telefon1 = new Telefon(20668161, operatør1);
 
             Note note1 = new Note() {Noten = "Studerende på AU", NoteID = 2};
 
-            Operatoer operatør1 = new Operatoer(){Selskab = "TDC"};
-
-
-
+            Person person1 = new Person("Simon", "Møller", "Hindkaer", "Mand", adresse1);
             utilitiy.AddPersonDB(ref person1);       // Tilføjer person1 til databasen
-            //utilitiy.AddAdresseDB(ref adresse1);     // Tilføjer adresse1 til databasen
-            //utilitiy.AddCityDB(ref city1);           // Tilføjer city1 til databasen
+
+
+
+
+            
             //utilitiy.AddEmailDB(ref email1);         // Tilføjer email1 til databasen
             //utilitiy.AddTelefonDB(ref telefon1);     // Tilføjer telefon1 til databasen
             //utilitiy.AddNoteDB(ref note1);           // Tilføjer note1 til databasen
